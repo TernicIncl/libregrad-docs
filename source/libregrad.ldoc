@@ -1,0 +1,12 @@
+@title: Ternic | LibreGrad Information
+@toc
+
+# LibreGrad | Information
+
+LibreGrad the operating system is made on top of the Linux Kernel, or rather, a fork of the Linux Kernel. The Distro is made from zero.
+
+We are currently working on our own init system, and rootfs. We will explain what that all means shortly. Currently, our main priority is documenting
+the official Linux Kernel, so we can study it, and know the internals for the full 100%.
+
+At this point, we are in very earily stages of documenting and development. Yet we are making proper progress, Everything will be put together inside this documentation
+and repository. We are working on the basics of the kernel all the way to the working of each and every component.
