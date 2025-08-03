@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Ternic - Getting Started</title>
+<title>Ternic | The Linux Kernel</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
@@ -182,14 +182,19 @@
 </head>
 <body>
 <p>
-<nav class='toc'><h3>Table of Contents</h3><ul><li class='level-1'><a href='#ternic-documentation-|-libregrad'>Ternic Documentation | LibreGrad</a></li><li class='level-2'><a href='#prerequisites'>Prerequisites</a></li><li class='level-2'><a href='#general-information'>General Information</a></li><li class='level-2'><a href='#the-linux-kernel'>The Linux Kernel</a></li></ul></nav></p><p><h1 id="ternic-documentation-|-libregrad">Ternic Documentation | LibreGrad</h1></p><p>Welcome to <strong>LibreGrad</strong> Documentation!
-This guide covers everything you'll need to setup and dive into our operating system.</p><p><hr></p><p><h2 id="prerequisites">Prerequisites</h2></p><p><div class="note">Ensure you have the following tools installed: <code>gcc</code>, <code>make</code>, <code>libelf-dev</code>.</div></p><p><ul><li>Linux Build Enviroment</li></ul>
-<ul><li>Docker (Optional)</li></ul>
-<ul><li>QEMU for virtualization</li></ul></p><p><hr></p><p>The above are the bare minimums you need to start developing / compiling our kernel. This documentation does not only cover building the kernel, but also how it functions internally.
-We are aiming to make the best possible documentation, both for our Kernel and the Linux Kernel. </p><p><h2 id="general-information">General Information</h2></p><p>It's important to note, that before you get to compiling, we will first cover a lot of written explanation and information. We want to prepare our users the best way possible.</p><p>The LibreGrad kernel is a fork of the Linux Kernel, we are applying changes and creating mutiple new features. Currently, this documentation will mainly go over general internals of an operaing
-system and the Linux Kernel. We are not yet as far with out own kernel. Please also note; This documentation is being worked on, by a single person. It can contain mistakes, but those will be fixed
-as fast as we possibly can. </p><p><div class="note">We are always looking for people who want to assist us with this documentation.</div></p><p>At the current stage, we are working on deeply stuyding and learning about the Linux Kernel, so we are able to adapt it to our own Kernel, and make the needed modifications to it.
-We will as well as work on the Kernel also work on making a "Distro" with it. This project takes time, please, be patient. This project is developed by a small group of people.</p><p><h2 id="the-linux-kernel">The Linux Kernel</h2></p><p><a href="linux_kernel.html">Linux Kernel | Basics</a>
-</p>
+<nav class='toc'><h3>Table of Contents</h3><ul><li class='level-1'><a href='#the-linux-kernel-|-introduction'>The Linux Kernel | Introduction</a></li><li class='level-1'><a href='#why-linux-?'>Why Linux ?</a></li><li class='level-1'><a href='#basic-operating-system-concepts'>Basic Operating System Concepts</a></li><li class='level-1'><a href='#multiuser-system'>Multiuser system</a></li></ul></nav></p><p><h1 id="the-linux-kernel-|-introduction">The Linux Kernel | Introduction</h1></p><p>Welcome to the introduction of the Linux Kernel. Within this section, we will discuss what the Linux Kernel is, how it works, and how we will use it.</p><p><h1 id="why-linux-?">Why Linux ?</h1></p><p>There are mutiple UNIX based Kernels on the market, so why Linux ? Well,  Linux adopts the best features and design choices of several different Unix kernels. Because
+of this, we are getting the best features and design choices, which we can then build on top. </p><p>Let's go more in depth on what Linux has:</p><p><ul><li>Kernel Threading:</li></ul>
+    Some Unix like kernels, like Solaris are orginized as a set of kernel threads. A kernel thread is an execution context that can be independently scheduled. 
+    </p><p><ul><li>Filesystem:</li></ul>
+    Linux's standard filesystems come in many flavors. You can use the older Ext2 filesystem if you dont have any specific needs. 
+    You might switch to Ext3 if you want to avoid lengthy filesystem checks after a system crash. </p><p><ul><li>Powerful:</li></ul>
+    Linux systems are blazing fast, because they are thought trough, and they fully exploit the features of the hardware components.</p><p>Besides all of this, Linux runs on many many architectures, think of ARM processors, but also Risc(V) based processors. </p><p><hr></p><p><h1 id="basic-operating-system-concepts">Basic Operating System Concepts</h1></p><p>Each computer system includes a basic set of programs, which is also called the Operating System. The most important program is the Kernel. It is loaded into ram when
+the system boots and contains critical procdures that are needed for the system to operate.</p><p>An operating system has 2 must fulfill objectives: Interact with the hardware components & Provide an execution enviroment.  The execution enviroment is also called
+the <strong>userland</strong>. a Unix like operating system hides all low-level details concerning the physical organization of the computer from the applicatios ran by the user.
+When a program wants to use a hardware resources, it must issue a request to the operating systen. The kernel checks that requests and evaluates it and <strong>if</strong> it chooses to 
+grant, the resource interacts with the proper hardware components on behalf of the user program.</p><p><h1 id="multiuser-system">Multiuser system</h1></p><p>A multi user system is a computer that is able to execute several applications belonging to two or more users. It does this concurrently, meaning it can be active at the same time.
+Multiuser operating systems must include a few features, one of which is an authentication system, to verify the users identity, and keep it secure. Then, also a protection feature for
+programs that have bad intentions, or that are buggy and could block other applications running the system. But, we of course alos have a protection software that protects the user from 
+malicious user progranns that have bad intentions, such as spying on the user's activity.</p><p></p>
 </body>
 </html>

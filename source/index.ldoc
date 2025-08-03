@@ -37,6 +37,4 @@ We will as well as work on the Kernel also work on making a "Distro" with it. Th
 
 ## The Linux Kernel
 
-@include test.ldoc
-
-@link intro "introduction"
+@link linux_kernel "Linux Kernel | Basics"

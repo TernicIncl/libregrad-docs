@@ -1,0 +1,47 @@
+@title: Ternic | The Linux Kernel
+@toc
+
+# The Linux Kernel | Introduction
+
+Welcome to the introduction of the Linux Kernel. Within this section, we will discuss what the Linux Kernel is, how it works, and how we will use it.
+
+# Why Linux ?
+
+There are mutiple UNIX based Kernels on the market, so why Linux ? Well,  Linux adopts the best features and design choices of several different Unix kernels. Because
+of this, we are getting the best features and design choices, which we can then build on top. 
+
+Let's go more in depth on what Linux has:
+
+- Kernel Threading:
+    Some Unix like kernels, like Solaris are orginized as a set of kernel threads. A kernel thread is an execution context that can be independently scheduled. 
+    
+
+- Filesystem:
+    Linux's standard filesystems come in many flavors. You can use the older Ext2 filesystem if you dont have any specific needs. 
+    You might switch to Ext3 if you want to avoid lengthy filesystem checks after a system crash. 
+
+- Powerful:
+    Linux systems are blazing fast, because they are thought trough, and they fully exploit the features of the hardware components.
+
+
+Besides all of this, Linux runs on many many architectures, think of ARM processors, but also Risc(V) based processors. 
+
+---
+
+# Basic Operating System Concepts
+
+Each computer system includes a basic set of programs, which is also called the Operating System. The most important program is the Kernel. It is loaded into ram when
+the system boots and contains critical procdures that are needed for the system to operate.
+
+An operating system has 2 must fulfill objectives: Interact with the hardware components & Provide an execution enviroment.  The execution enviroment is also called
+the **userland**. a Unix like operating system hides all low-level details concerning the physical organization of the computer from the applicatios ran by the user.
+When a program wants to use a hardware resources, it must issue a request to the operating systen. The kernel checks that requests and evaluates it and **if** it chooses to 
+grant, the resource interacts with the proper hardware components on behalf of the user program.
+
+# Multiuser system
+
+A multi user system is a computer that is able to execute several applications belonging to two or more users. It does this concurrently, meaning it can be active at the same time.
+Multiuser operating systems must include a few features, one of which is an authentication system, to verify the users identity, and keep it secure. Then, also a protection feature for
+programs that have bad intentions, or that are buggy and could block other applications running the system. But, we of course alos have a protection software that protects the user from 
+malicious user progranns that have bad intentions, such as spying on the user's activity.
+
