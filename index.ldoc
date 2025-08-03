@@ -1,0 +1,42 @@
+@title: Ternoc - Getting Started
+@toc
+
+# Ternic Documentation | LibreGrad
+
+Welcome to **LibreGrad** Documentation!
+This guide covers everything you'll need to setup and dive into our operating system.
+
+---
+
+## Prerequisites
+
+@note: Ensure you have the following tools installed: `gcc`, `make`, `libelf-dev`.
+
+- Linux Build Enviroment
+- Docker (Optional)
+- QEMU for virtualization
+
+---
+
+The above are the bare minimums you need to start developing / compiling our kernel. This documentation does not only cover building the kernel, but also how it functions internally.
+We are aiming to make the best possible documentation, both for our Kernel and the Linux Kernel. 
+
+## General Information
+
+It's important to note, that before you get to compiling, we will first cover a lot of written explanation and information. We want to prepare our users the best way possible.
+
+The LibreGrad kernel is a fork of the Linux Kernel, we are applying changes and creating mutiple new features. Currently, this documentation will mainly go over general internals of an operaing
+system and the Linux Kernel. We are not yet as far with out own kernel. Please also note; This documentation is being worked on, by a single person. It can contain mistakes, but those will be fixed
+as fast as we possibly can. 
+
+@note: We are always looking for people who want to assist us with this documentation.
+
+
+At the current stage, we are working on deeply stuyding and learning about the Linux Kernel, so we are able to adapt it to our own Kernel, and make the needed modifications to it.
+We will as well as work on the Kernel also work on making a "Distro" with it. This project takes time, please, be patient. This project is developed by a small group of people.
+
+## The Linux Kernel
+
+@include test.ldoc
+
+@link intro "introduction"
