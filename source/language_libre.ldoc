@@ -1,0 +1,13 @@
+@title: Ternic | LibreGrad Language
+@toc
+
+# LibreGrad | Language
+
+We are developing the LibreGrad language set, including but not limited to the LibreDoc Language and the standard coding Language that compiled to C.
+We are currently also in very early stages with this, the documentation language is already ready to be used. Which is the language used to make this documentation
+in, in full.
+
+The LibreC Language on the other hand, will be used for developing and maintaining some parts of our software, which will be made public on our own git-hosted instance,
+which is available at := https://git.ternic.eu. Within this web page, you can access our software that is not on GitHub.
+
+@link libregrad_git "LibreGrad | Git Instance"

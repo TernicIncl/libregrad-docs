@@ -1,0 +1,13 @@
+@title: Ternic | LibreGrad Git Instance
+@toc
+
+# LibreGrad | Git Instance
+We are going to be hosting our own public Git Instance, publicly available at := https://git.ternic.eu. On here, you are able to find all our public accessable code. Some pieces
+of code within that URL may not be on GitHub, mainly due to the language display, we want our language to be displayed publicly inside the languagr tab. This may sound weird,
+but it is clearer for our repository display. So users actually know what language(s) are used within our codebase.
+
+Currently, we are not online at the URL mentioned above. We are configuring our software to host the Git server. We are doing this manually. We will make a updated documentation with a status update,
+when the Git server is running and is operational. This may take a few hours from this initial update, or may take a few days to weeks, depending on other tasks. We expect this to be done in ~ 2 days from this
+commit. 
+
+@note: Date of writing: 4/08/25.
