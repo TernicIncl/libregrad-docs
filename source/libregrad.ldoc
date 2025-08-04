@@ -10,3 +10,7 @@ the official Linux Kernel, so we can study it, and know the internals for the fu
 
 At this point, we are in very earily stages of documenting and development. Yet we are making proper progress, Everything will be put together inside this documentation
 and repository. We are working on the basics of the kernel all the way to the working of each and every component.
+
+## LibreGrad | Current Status
+
+The current status of LibreGrad is very very early. We will add a schema regarding our progress soon.
